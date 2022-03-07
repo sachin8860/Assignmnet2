@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Assignment 1</title>
+    <style>
+      .container {
+        width: 40%;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2><u>Assignment 1</u></h2>
+      <p>
+        Write a JavaScript program where the program takes a random integer
+        between 1 to 10, the user is then prompted to input a guess number. If
+        the user input matches with guess number, the program will display a
+        message "Good Work" otherwise display a message "Not matched"
+      </p>
+      <hr />
+      <h2>Solution</h2>
+      <script>
+        let x = Math.floor(Math.random() * 10) + 1;
+        let y = prompt("Enter any int no(bw 1 - 10: )");
+
+        document.write("Generated Random no is = " + x);
+        document.write("<br> You have entered = " + y);
+        document.write("<br><br> Output - ");
+        if (x == y) {
+          document.write(" Good work");
+        } else {
+          document.write(" Not Matched");
+        }
+      </script>
+    </div>
+  </body>
+</html>
